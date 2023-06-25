@@ -39,4 +39,6 @@
   elsif sym == "/"
     puts div
 
+  else puts "error"
 
+  end
