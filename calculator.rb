@@ -1,21 +1,42 @@
- puts "enter a number..."
- num1 = gets.chomp().to_i
- 
- puts "enter another number..."
- num2 = gets.chomp().to_i
+  sym = gets.chomp
 
-  def addition (num1, num2)
+  num1 = gets.to_i
+  num2 = gets.to_i
+
+  def addition(num1, num2)
     return num1+num2
   end
 
-  def subtraction (num1, num2)
+  add = addition(num1, num2)
+ 
+  if sym == "+"
+    puts add
+
+  def subtraction(num1, num2)
     return num1-num2
   end
 
-  def multiplication (num1, num2)
+  sub = subtraction(num1, num2)
+  
+  elsif sym == "-"
+    puts sub
+
+  def multiplication(num1, num2)
     return num1*num2
   end
-  
-  def division (num1, num2)
+
+  mult = multiplication(num1, num2)
+
+  elsif sym == "*"
+    puts mult
+
+  def division(num1, num2)
     return num1/num2
   end
+
+  div = division(num1, num2)
+
+  elsif sym == "/"
+    puts div
+
+
